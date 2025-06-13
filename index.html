@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sticky Notes App</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<button class="theme-toggle" id="theme-toggle">
+  <i class="fas fa-moon"></i>
+</button>
+
+<header>
+  <span class="logo"><i class="fas fa-sticky-note"></i></span>
+  Sticky Notes
+</header>
+
+<div class="description">
+  Keep track of your thoughts, ideas, and tasks using colorful sticky notes.
+  Drag them around, customize colors, and they'll save automatically!
+</div>
+
+<div class="controls">
+  <button id="add-note">
+    <i class="fas fa-plus"></i>
+    Create Note
+  </button>
+
+  <div class="search-bar">
+    <i class="fas fa-search search-icon"></i>
+    <input type="text" id="search-notes" placeholder="Search notes...">
+  </div>
+
+  <div class="color-palette">
+    <div class="color-option" style="background-color: #fff8e1;" data-color="#fff8e1"></div>
+    <div class="color-option" style="background-color: #e8f5e9;" data-color="#e8f5e9"></div>
+    <div class="color-option" style="background-color: #e3f2fd;" data-color="#e3f2fd"></div>
+    <div class="color-option" style="background-color: #fce4ec;" data-color="#fce4ec"></div>
+    <div class="color-option" style="background-color: #f3e5f5;" data-color="#f3e5f5"></div>
+  </div>
+</div>
+
+<div id="notes-container"></div>
+
+<div class="empty-state" id="empty-state">
+  <i class="fas fa-sticky-note"></i>
+  <p>No notes yet! Click "Create Note" to add one.</p>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
