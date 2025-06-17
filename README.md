@@ -1,1 +1,1 @@
-# This my local repo
+# This is a simple sticky notes application 
